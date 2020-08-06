@@ -8,7 +8,7 @@ const jwt = require('jsonwebtoken');
 require('../models/user');
 var User = mongoose.model("User");
 
-router.post("/signin", (req, res) => {
+router.post("/api/signin", (req, res) => {
     let { username, password } = req.body;
     if (!username || !password)
         return res.json({ error: "Enter all fields" });

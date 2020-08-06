@@ -6,7 +6,7 @@ const router = express.Router();
 const Poll = mongoose.model("Poll");
 const User = mongoose.model("User");
 
-router.post("/createpoll", tokenCheck, (req, res) => {
+router.post("/api/createpoll", tokenCheck, (req, res) => {
     let newid = "";
     const { title, option1, option2, option3, option4, public } = req.body;
 

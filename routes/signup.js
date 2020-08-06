@@ -7,7 +7,7 @@ require('../models/user');
 
 
 var User = mongoose.model("User");
-router.post("/signup", (req, res) => {
+router.post("/api/signup", (req, res) => {
     let { username, email, password } = req.body;
     username = username.trim();
     if (!username || !password || !email)

@@ -15,7 +15,7 @@ function Mypolls() {
     const { Title } = Typography;
 
     useEffect(() => {
-        axios.get("/mypolls", {
+        axios.get("api/mypolls", {
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
                 'Authorization': 'Bearer ' + localStorage.getItem("token")

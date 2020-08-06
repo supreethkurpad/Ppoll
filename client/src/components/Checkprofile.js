@@ -14,7 +14,7 @@ function Checkprofile(props) {
     const { Title } = Typography;
 
     useEffect(() => {
-        axios.get("/users/".concat(match.params.id), {
+        axios.get("/api/users/".concat(match.params.id), {
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
                 'Authorization': 'Bearer ' + localStorage.getItem("token")

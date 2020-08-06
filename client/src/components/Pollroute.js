@@ -28,7 +28,7 @@ function Pollroute(props) {
     };
 
     function confirm() {
-        axios.post("/deletepoll", qs.stringify({ id: poll._id }), {
+        axios.post("api/deletepoll", qs.stringify({ id: poll._id }), {
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
                 'Authorization': 'Bearer ' + localStorage.getItem("token")
@@ -58,7 +58,7 @@ function Pollroute(props) {
             message.error("Select an option");
             return;
         }
-        axios.post("/votehandler", qs.stringify({ pollId: match.params.id, option }), config)
+        axios.post("api/votehandler", qs.stringify({ pollId: match.params.id, option }), config)
             .then(res => {
                 if (res.data.error)
                     message.error(res.data.error);
@@ -79,7 +79,7 @@ function Pollroute(props) {
 
     useEffect(() => {
         axios({
-            method: 'get', url: "/".concat(match.params.id), headers: {
+            method: 'get', url: "/api/".concat(match.params.id), headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
                 'Authorization': 'Bearer ' + localStorage.getItem("token")
             }

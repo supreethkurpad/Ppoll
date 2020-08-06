@@ -31,7 +31,7 @@ function CreatePoll() {
             }
         }
 
-        axios.post("/createpoll", qs.stringify(reqBody), config)
+        axios.post("api/createpoll", qs.stringify(reqBody), config)
             .then(res => {
                 if (res.data.error) {
                     message.error(res.data.error);

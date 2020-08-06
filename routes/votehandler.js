@@ -4,8 +4,8 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const tokenCheck = require('../middleware/tokenCheck');
 const Poll = mongoose.model("Poll");
-const User = mongoose.model("User");
-router.post("/votehandler", tokenCheck, (req, res) => {
+
+router.post("/api/votehandler", tokenCheck, (req, res) => {
     let { pollId, option } = req.body;
     option--;
 

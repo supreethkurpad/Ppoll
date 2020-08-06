@@ -5,7 +5,7 @@ const router = express.Router();
 require('../models/poll');
 
 
-router.post("/deletepoll", tokenCheck, (req, res) => {
+router.post("/api/deletepoll", tokenCheck, (req, res) => {
     const id = req.body.id;
     const Poll = mongoose.model("Poll");
 

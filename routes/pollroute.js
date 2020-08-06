@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 require('../models/poll');
 const Poll = mongoose.model("Poll");
 const tokenCheck = require('../middleware/tokenCheck');
-router.get("/:pollid", tokenCheck, (req, res) => {
+router.get("/api/:pollid", tokenCheck, (req, res) => {
     const pollid = req.params.pollid;
     Poll.findById(pollid).populate("postedBy", "_id username").then(found => {
         req.user.password = "";

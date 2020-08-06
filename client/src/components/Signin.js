@@ -29,7 +29,7 @@ function Signin() {
             }
         }
 
-        axios.post("/signin", qs.stringify(reqBody), config)
+        axios.post("api/signin", qs.stringify(reqBody), config)
             .then(res => {
                 if (res.data.error) {
                     message.error(res.data.error);

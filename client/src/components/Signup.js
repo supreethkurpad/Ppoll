@@ -27,7 +27,7 @@ function Signup() {
             }
         }
 
-        axios.post("/signup", qs.stringify(reqBody), config)
+        axios.post("api/signup", qs.stringify(reqBody), config)
             .then(res => {
                 if (res.data.error) {
                     message.error(res.data.error);
