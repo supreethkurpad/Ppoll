@@ -11,7 +11,7 @@ function Discover() {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        Axios.get("api/discover", {
+        Axios.get("/api/discover", {
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
                 'Authorization': 'Bearer ' + localStorage.getItem("token")

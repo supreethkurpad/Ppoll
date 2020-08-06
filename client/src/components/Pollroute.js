@@ -58,7 +58,7 @@ function Pollroute(props) {
             message.error("Select an option");
             return;
         }
-        axios.post("api/votehandler", qs.stringify({ pollId: match.params.id, option }), config)
+        axios.post("/api/votehandler", qs.stringify({ pollId: match.params.id, option }), config)
             .then(res => {
                 if (res.data.error)
                     message.error(res.data.error);
