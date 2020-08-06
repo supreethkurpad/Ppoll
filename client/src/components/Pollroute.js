@@ -28,7 +28,7 @@ function Pollroute(props) {
     };
 
     function confirm() {
-        axios.post("api/deletepoll", qs.stringify({ id: poll._id }), {
+        axios.post("/api/deletepoll", qs.stringify({ id: poll._id }), {
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
                 'Authorization': 'Bearer ' + localStorage.getItem("token")
