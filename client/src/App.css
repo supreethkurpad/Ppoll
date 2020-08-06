@@ -1,0 +1,199 @@
+@import '~antd/dist/antd.css';
+
+
+
+.signpage {
+    margin-top: 63px;
+    color: white;
+    font-family: Montserrat;
+    text-align: center;
+}
+
+.myMenu {
+    padding: 0%;
+}
+
+.logo {
+    margin: 0 10px;
+    font-size: xx-large;
+    float: left;
+    color: azure;
+    font-family: 'Rowdies', cursive;
+}
+
+
+.private-toggle {
+    padding: 12px 0;
+    font-size: large;
+    text-align: left;
+}
+
+p.private-toggle {
+    color: black;
+    height: auto;
+    width: auto
+}
+
+
+
+::placeholder,
+input {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-weight: 600;
+    /* Firefox */
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    width: 100%;
+    height: 100%;
+    background-color: #08142c;
+    background-size: auto;
+    text-align: center;
+}
+
+.title-style {
+    color: white !important;
+    text-align: center;
+}
+
+
+.feature {
+    background-color: #08142c;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.link-style {
+    color: black !important;
+}
+
+.site-layout-content {
+    padding: 24px;
+    min-height: 800px;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    background: #08142c;
+}
+
+.half {
+    padding: 0;
+    margin: 0;
+    min-height: 800px;
+    background-color: #1c94fc;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+}
+
+.half1 {
+    padding-top: 50px;
+    text-align: left;
+    margin: 0;
+    min-height: 800px;
+    background-color: #08142c;
+    font-family: 'Kanit', sans-serif;
+    font-size: 100px;
+    letter-spacing: 3px;
+    line-height: 1;
+
+}
+
+
+.des {
+    padding: 20px 40px;
+    font-family: 'Montserrat';
+    font-size: 40px;
+}
+
+.desc {
+    padding: 20px 40px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+
+.step {
+    border-radius: 50px;
+    padding: 50px;
+    height: 250px;
+    width: 250px;
+    background-color: #08142c;
+}
+
+.card {
+    height: 100px;
+    width: 300px;
+}
+
+.sign {
+    max-width: 500px;
+    height: 500px;
+    margin: 2px auto;
+}
+
+
+
+.card-title {
+    background-color: #f7f7f7 !important;
+}
+
+.expand {
+    font-size: "small";
+    position: absolute;
+    right: "20px";
+    bottom: "0px";
+}
+
+.card-style {
+    max-width: 500px;
+    margin: 15px auto;
+    text-align: left;
+    height: "auto";
+    font-size: 25px;
+    word-wrap: break-word;
+}
+
+.card-link {
+    font-size: small;
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+}
+
+.input-field {
+    padding: 20px;
+    border-width: 2px;
+    border-color: black;
+    width: 100%;
+}
+
+.text-area-style {
+    width: 100%;
+    resize: none;
+    font-family: Montserrat;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .half1 {
+        padding: 20px;
+        text-align: center;
+        margin: 0;
+        min-height: 550px;
+        background-color: #08142c;
+        font-family: 'Kanit', sans-serif;
+        font-size: 50px;
+        letter-spacing: 3px;
+        line-height: 1;
+    }
+
+    .des {
+        padding: 30px;
+        font-family: 'Montserrat';
+        font-size: large;
+    }
+
+}
