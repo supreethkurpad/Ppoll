@@ -9,6 +9,7 @@ Users can sign up and create polls and share it with people using poll links. Th
 
 The project uses Bcrypt to hash user passwords and mongodb atlas to store the user and corresponding polls on database. The client folder contains a react front-end and the server folder contains a NodeJS  backend. The UI frameworks used are AntDesign and Bootstrap. Axios is used to communicate between the front-end and backend.
 The routes folder contains all API endpoints for the backend. The middleware folder contains JS file to verify user token using JWT. The endpoints are protected using this middleware. The models folder contains mongoose schema for USER and POLL types. React's context hook is used to maintain user context. The JWT tokens are stored on local storage along user details.
+The site has been made mobile friendly and responsive using Flex grids in Ant-Design.
 
 # Running it locally
   
